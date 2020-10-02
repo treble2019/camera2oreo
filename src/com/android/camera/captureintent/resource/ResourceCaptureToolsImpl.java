@@ -205,11 +205,7 @@ public final class ResourceCaptureToolsImpl implements ResourceCaptureTools {
 
     @Override
     public void playCountDownSound(int remainingSeconds) {
-        if (remainingSeconds == 1) {
-            mSoundPlayer.play(R.raw.timer_final_second, 0.6f);
-        } else if (remainingSeconds == 2 || remainingSeconds == 3) {
-            mSoundPlayer.play(R.raw.timer_increment, 0.6f);
-        }
+        Log.d(TAG, "Countdown");
     }
 
     @Override

@@ -485,8 +485,8 @@ public final class StateReadyForCapture extends StateImpl {
                                     // Starts the short version of the capture animation UI.
                                     mResourceCaptureTools.get().getModuleUI()
                                             .startFlashAnimation(true);
-                                    mResourceCaptureTools.get().getMediaActionSound().play(
-                                            MediaActionSound.SHUTTER_CLICK);
+                                    //mResourceCaptureTools.get().getMediaActionSound().play(
+                                    //        MediaActionSound.SHUTTER_CLICK);
                                 }
                             });
                         }

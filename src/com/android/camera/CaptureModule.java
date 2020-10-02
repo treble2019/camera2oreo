@@ -438,7 +438,7 @@ public class CaptureModule extends CameraModule implements
             }
         });
 
-        mMediaActionSound.load(MediaActionSound.SHUTTER_CLICK);
+        //mMediaActionSound.load(MediaActionSound.SHUTTER_CLICK);
         guard.stop();
     }
 
@@ -592,11 +592,7 @@ public class CaptureModule extends CameraModule implements
 
     @Override
     public void onRemainingSecondsChanged(int remainingSeconds) {
-        if (remainingSeconds == 1) {
-            mSoundPlayer.play(R.raw.timer_final_second, 0.6f);
-        } else if (remainingSeconds == 2 || remainingSeconds == 3) {
-            mSoundPlayer.play(R.raw.timer_increment, 0.6f);
-        }
+        Log.v(TAG, " do not play any sound");
     }
 
     private void cancelCountDown() {
@@ -618,7 +614,7 @@ public class CaptureModule extends CameraModule implements
             public void run() {
                 // Starts the short version of the capture animation UI.
                 mAppController.startFlashAnimation(true);
-                mMediaActionSound.play(MediaActionSound.SHUTTER_CLICK);
+                //mMediaActionSound.play(MediaActionSound.SHUTTER_CLICK);
             }
         });
     }

@@ -356,7 +356,7 @@ public class OneCameraZslImpl extends AbstractOneCamera {
                 sCaptureImageFormat, MAX_CAPTURE_IMAGES);
 
         mCaptureImageReader.setOnImageAvailableListener(mCaptureManager, mCameraHandler);
-        mMediaActionSound.load(MediaActionSound.SHUTTER_CLICK);
+        //mMediaActionSound.load(MediaActionSound.SHUTTER_CLICK);
     }
 
     @Override
@@ -410,7 +410,7 @@ public class OneCameraZslImpl extends AbstractOneCamera {
         // Tell CaptureModule shutter has occurred so it can flash the screen.
         params.callback.onQuickExpose();
         // Play shutter click sound.
-        mMediaActionSound.play(MediaActionSound.SHUTTER_CLICK);
+        //mMediaActionSound.play(MediaActionSound.SHUTTER_CLICK);
     }
 
     /**

@@ -1418,11 +1418,7 @@ public class PhotoModule
 
     @Override
     public void onRemainingSecondsChanged(int remainingSeconds) {
-        if (remainingSeconds == 1) {
-            mCountdownSoundPlayer.play(R.raw.timer_final_second, 0.6f);
-        } else if (remainingSeconds == 2 || remainingSeconds == 3) {
-            mCountdownSoundPlayer.play(R.raw.timer_increment, 0.6f);
-        }
+        Log.v(TAG, "do not play anysound");
     }
 
     @Override

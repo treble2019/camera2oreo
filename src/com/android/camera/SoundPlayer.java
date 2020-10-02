@@ -60,7 +60,7 @@ public class SoundPlayer {
         if (soundId == null) {
             throw new IllegalStateException("Sound not loaded. Must call #loadSound first.");
         }
-        mSoundPool.play(soundId, volume, volume, 0 /* priority */, 0 /* loop */, 1 /* rate */);
+        //mSoundPool.play(soundId, volume, volume, 0 /* priority */, 0 /* loop */, 1 /* rate */);
     }
 
     /**
