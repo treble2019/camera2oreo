@@ -149,7 +149,7 @@ class ExifOutputStream extends FilterOutputStream {
                     out.write(mBuffer.array(), 0, 2);
                     mState = STATE_FRAME_HEADER;
                     mBuffer.rewind();
-                    writeExifData();
+                    //writeExifData();
                     break;
                 case STATE_FRAME_HEADER:
                     // We ignore the APP1 segment and copy all other segments
